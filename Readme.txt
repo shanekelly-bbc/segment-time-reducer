@@ -1,6 +1,14 @@
+Author: Shane Kelly
 
+Description: This is for Software Engineering Team Lead - Audio Products (CPW) (BBC/TP/903956/41217)
 
+To build:
+mvn clean install
 
+To run:
+mvn exec:java
+
+Alternatively run it in an IDE or from the command line (you will need to extract the built jar first, and will require jackson-databind and it's dependencies to be in the classpath)
 
 Output:
 

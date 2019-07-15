@@ -46,9 +46,9 @@ public class Main {
         if (timeline == null) return output;
 
         ArrayNode segmentEventPlacements = (ArrayNode) timeline.get("segmentEventPlacements");
-        if (segmentEventPlacements !=null) {
+        if (segmentEventPlacements != null) {
             for (int i = 0; i < segmentEventPlacements.size(); i++) {
-                JsonNode sgmEvn =segmentEventPlacements.get(i).get("segment_event");
+                JsonNode sgmEvn = segmentEventPlacements.get(i).get("segment_event");
                 if (sgmEvn != null ){
                     output = output + getTimesForSegmentEvent(sgmEvn);
                 }
